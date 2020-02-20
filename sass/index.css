@@ -19,6 +19,15 @@ nav {
   }
 }
 
+@media (max-width: 250px) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 a {
   color: white;
   height: 50px;
@@ -37,6 +46,12 @@ a {
 }
 
 @media (max-width: 500px) {
+  a {
+    border-bottom: 2px solid white;
+  }
+}
+
+@media (max-width: 250px) {
   a {
     border-bottom: 2px solid white;
   }
@@ -66,6 +81,21 @@ body {
 }
 
 @media (max-width: 500px) {
+  #main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 250px) {
   #main {
     display: -webkit-box;
     display: -ms-flexbox;
