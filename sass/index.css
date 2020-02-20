@@ -10,6 +10,15 @@ nav {
           justify-content: space-evenly;
 }
 
+@media (max-width: 500px) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 a {
   color: white;
   height: 50px;
@@ -25,6 +34,12 @@ a {
           justify-content: center;
   font-size: 200%;
   text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  a {
+    border-bottom: 2px solid white;
+  }
 }
 
 a:hover {
@@ -48,6 +63,21 @@ body {
       flex-wrap: nowrap;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media (max-width: 500px) {
+  #main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 aside {

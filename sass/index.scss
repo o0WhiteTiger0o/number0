@@ -11,6 +11,9 @@ nav {
     background-color: $secondColor;
     display: flex;
     justify-content: space-evenly;
+    @media(max-width: 500px){
+        flex-direction: column;
+    }
 
 }
 
@@ -23,7 +26,9 @@ a {
     justify-content: center;
     font-size: 200%;
     text-decoration: none;
-
+    @media(max-width: 500px){
+        border-bottom: 2px solid white;
+    }
 
 }
 
@@ -34,6 +39,7 @@ a:hover{
 body{
     background-color: $mainColor;
     font-size: 62.5%;
+   
 }
 
 #main{
@@ -41,6 +47,12 @@ body{
     flex-direction: row;
     flex-wrap: nowrap;
     box-sizing: border-box;
+    @media(max-width: 500px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
 
 }
 
@@ -78,3 +90,4 @@ a.link{
     font-size: 100%;
     background-color: $mainColor;
 }
+
